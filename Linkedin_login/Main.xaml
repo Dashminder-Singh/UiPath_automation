@@ -1,0 +1,135 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="894,1278" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>CredentialManagement</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,1213" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strUsername" />
+      <Variable x:TypeArguments="ss:SecureString" Name="secure_pass" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="434,79" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[secure_pass]" PersistanceType="Enterprise" Target="Linkedin" Username="[strUsername]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: LinkedIn Login, Sign in | LinkedIn" sap:VirtualizedContainerService.HintSize="434,1002" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="e788436b-55c1-465f-8ea7-a4c453a979fd" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,786" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email or Phone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e788436b-55c1-465f-8ea7-a4c453a979fd" Text="[strUsername]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/login" DesignTimeRectangle="531, 289, 304, 52" ElementType="InputBox" FriendlyName="'INPUT username'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Email or Phone' /&gt;" Guid="98c2d38f-07c0-4096-b7fa-191b18e60a8c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATQAAAA4CAYAAABzNARQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOkSURBVHhe7dm/SuxMHIdxW09nuVdh6R14IwsWtqfZ1lpY0ngRIqwc8AqOCgrbeAFiJ2hpJVjMyXeSSSZjNrqSXZLfeT4wL7r5N1nIcya+Ow4AjGgE7fz+1R2ePri94xv36+gvg8FgDHKoUWqVmhWrgja7eHT7J3fuILt2u7Mrt/P7D4PBYAxyqFFqlZqldgU+aKqcNmins9sn9/b+4TcCwBCpUWqVmqV2hZWaD5qWbqqddgCAsVCz1C41THzQ9D6q0rEyAzAmapbapYaJD5r+yKb3UgAYG7VLDfM/6z8EDcBYETQAZhA0AGYQNABm9BO054WbTiZuEo+jhXspN/fGX2fqFs/Fry+XUzeZL4tfNmGZNe8pH1l0uY1fH8Baegxa5rb9aG8laHGYy3CHqBE0YFgIWpc0aDldc3pZfELQgGHZfNDKKCz18PvXtvKVMX6dS6LgQxG25aN+zVu6bJ1XzvSVMd63nNdinl4j0hK0Zb5/GjR9Fq4RthVe3OKo3lbde+nr49PvYvv/aABj0mPQ6oey8WCWUWlEQPuEuPhj4wc9j8C8jojfv4rKGkHz103Om8clnVdryII0aMlcw71U52hcs4xZGtEoSt3Hl9uj63feL4DtrdBWRSE8+CvD0jj394MWr6Qq8VzSebXxgYlDHc+77frRvbR+J8177Tw+2beg+2eVBqyy/aB9eihbHtxPIVk3aG0xyMXz/G7QOvbpDNKKY9teWWvxvHWv8XcQRjOqAGrDC1q6f58rNJ0rnHvTQVvxnWhe4V67g6afiRewjsEFLX3I/e8/CJq/bmM1U1yn8Te0TQat/Lmx3c+pvvfu48vtX80RQKXHoKWvRuWDu2bQiu31eabz7EcrNM8HJDpXvGLbeNCkjFo1h/i+v3N8PoXo/4D60XW/wH+un6ABwAAQNABmEDQAZhA0AGYQNABmEDQAZhA0AGYQNABmEDQAZhA0AGYQNABmEDQAZhA0AGYQNABmEDQAZhA0AGYQNABmEDQAZhA0AGYQNABmEDQAZhA0AGYQNABmEDQAZhA0AGYQNABmEDQAZhA0AGYQNABmfAra3vGN251dubf3D/8hAIyBmqV2qWHig3Z4+uAOsmt3dvvkPwSAMVCz1C41THzQzu9f3f7JnS+ddmClBmDI1Ci1Ss1Su9Qw8UGT2cWj36DaaSe9lzIYDMYQhxqlVqlZaldQBU1UOS3d9D6qP7IxGAzGEIcapVaFlVnQCBoAjJdz/wDHPmWhL+K+xQAAAABJRU5ErkJggg==" InformativeScreenshot="f18cf7433aa299e2ca35672bf7885fb0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Login, Sign in | LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="531, 279, 105, 34" ElementType="Text" FriendlyName="'Email or Phone'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' aaname='Email or Phone' check:text='Email or Phone' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAmCAYAAADOZxX5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJkSURBVHhe7ZY7TsNAEEDTQkfpU1ByAy5iKQUtTVpqpMgNh0BIjpA4AR8JJDccANFFCiUVEsWwM961ZzcbJzG28aB50kpJ9jczz7vOBBRxqDSBqDSBqDSBqDSBqDSBqDSBqDSBqDSBqDSBqDSBeNKuXz7g9PIVjs4e4XB6r22krZI2u3mD44tnOMke4GB2B5PzW21jbSgMTxgKQ1lXT+/w+fVNIpVxQtLwSsQThsKU8UPS8B2Gp0xPmAxIGr3czF2pyEClCUSlCUSlCUSlCaS9tGUOaZJAwts0h5Xt7gzaJ4V8WX5dLVJI5kX5pQ+KzM/JtIxt1/v+O/BLaRkMHf4g0vjDZx9OJ06ltWBwaQbcM12Uv/xfaTbxAhOkK8Zeb/zqCRKnYrg+0+orqYBsn+sxvN74WBtXPg/3YESkFWZ8KA1/c3u4vpIV5NO6r8rdsn1+WIv1Gnf6Tqs2t4XzEsUxroA0lydjEp3XhaLxVeH2kEb7BuuaAoZxRWU5QmlBrC6Xag1vTyssfFBY4Zvn2362fyzfXk/apsRdchuL5629uzR+Iip4LGFcMaiI/GHkccf2Z7lEa+Ln2jg/GFuC+ftrDiNtbeNIcGvF2ldaLGEDj3NXaQ1jGou+YW7seq3hcWOuvAau+Q/OOKSF47s8abiWW7tvaRtqgnG5XJul4WdfUIxRSAsToe8tpNG+3lNZ7uO90/qUZj97/RRTnXvzfNu/JcZO/4hUwe0preyv10nnWauTRlCR2Fr85PUuDbHiqhh43rvMNyGwf5bUgnzbS1P+DJUmEJUmEJUmEJUmEJUmEJUmDoAf4xODzFBhTHEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,241" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e788436b-55c1-465f-8ea7-a4c453a979fd" SecureText="[secure_pass]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/login" DesignTimeRectangle="531, 365, 304, 52" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='Password' /&gt;" Guid="ed798e99-1a22-4719-bb07-ef76a88d379d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATQAAAA4CAYAAABzNARQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAW8SURBVHhe7dy/axRpGMDxq/0vbP0PLC1TprzOKijbmOMg2siBWOQ6hbCmkcBxRcIVFgkcCEZC9JIgy14Iy6KXSCLBBCUmhex5QZ57n/fH7Duzs8uKbtx98/3AYObnjsJ+eWYC/iAAkAiCBiAZuaDt7u7KzMyMVCoVmZiYYGFhYRnKRRulrdJmxbKg6Q49aHl5WVqtlt8KAMNHG6Wt0mbFUcuCprXTAwBgVGiztF1BFjQtHZMZgFGizdJ2BVnQ9LkUAEZN3C6CBmCkETQAySBoAJJB0AAkg6ABSAZBA5AMggYgGQQNQDIIGoBkEDQAySBoAJJB0AAkg6ABSAZBA5AMgjZI20vm37Iq60d+HcBAfaOgncj6bNn/970k2/6Ic4mgAWcqbtfXB20xn6/tRY3aOf5CEzQk6mDxuVyYeC7zb/2GITHQoJlvtCyZa1U3Tvz6OUPQkKhzGjQ/pZVsPxcIGhJF0KySd22z62Zr3slGtccxbuqL9y/p5Y/WpRp+jrjH3sK7PHtsITQ2PvF1O0Nk70vvxX9W/pjifZnPJGgYdXsNuXlrRS5OrMiFaysy/see3ZwF7e+XMj1l9pn9l6ZqsvbR7jZO5XijLpPxufe3pGn3f5Sn9822qU15bY8VOX6yYa8xXTt1Gw4bcjVe75N+94LBP3KaL3j+8dNHIDrPxSwOkLn2YghaySOsuaaLWNk9tAMahy4Lk18ve9cXotp5XlWqxQj7wBXvy4WNoGFU7cm9GyY8tzelfvhBDhpbMvn7jt3jgmZi9fMLebT9VpqPX8gVs375Nxe8Vq1m18cfNqW+906aKzUZN1G7eKchB2a/C1iY8Hzg4vOf6f4NefqvXe3bAIPmt5VMYLHSuHSE0SubrCIdMbTHm+CZa7Zj4+4rW+9xTXsv0b2563ce2+2eux0PjIYoaO/96PXZTUwhaO0J6o3M6aR2e8sE6508umN+vtWewNTx4zVzzqrM6VflqCHXzfk3n5nrft6R6WtrMrdgImbPF6k/NOf/2pRje2b/vm3Q7EQSLV3C5CaieGlHyEWgMO1kwmNd4REyKMTJXsvcg/0zC5O7Rpi88vsKCo+M7t6Kn52/Xg6PnBhxrVdbcjN7pDTT2N4nu73zHdqhzN8OQdNAmZ9n3TSXMVObi6CuuOMv6jGNulzW8/a35Eczlf154uI4+eSDPe1LaDuCgbxDi4VYxceVRiJ7XDNLR2zy8cyHJJ6+3M92fxw6e+325xWnsJyyoBWPtdcmaEjZqbT2X8ovP7Wnrt5B6zWhtc95vbAqF27UZd78ObbwxmxxE+H0k4ZM5q7dP21CMNigdfnil089Qe+JLAQynuayQNnPC+e141Z8PCyNVNBP0Pw9EjSkZ0ceVJvSPPwgx4d78kCD1VfQ3Dsy/WVA9g5toy5X9R1a/Bi5vSljOvlVVuVeQzecytrsioxNmdAVYtiv7xw0f17XoBnxdFWi4/2Vn8DWNT7RdnfcentqC3pEpzi9lQet+9/dnk/QMLL2Zf7uqlwy0dFHxSt3a7L2Pn6H1j1oIp/k4K+aXNepTs830bo+948c/Gd3ev4dnZnS6p/dFvfLABM1O7F9ubMLWpi2omPChJV/BMzHzR3jt5m4LeXerblr5t+36Tb9TWRJuPQ3lCXxLAuP+9ySbWXTnI1i4T78NoIGnJ0zDJrhpzT3RXcByAXLcHGJlyhAhfN1ycfMcdcohssHtcvjZTuuYekMX9egqSxgftF/ix7TH4BvT797wVcEDQC+P4IGIBkEDUAyCBqAZBA0AMkgaACSQdAAJIOgAUgGQQOQDIIGIBkEDUAyCBqAZBA0AMkgaACSQdAAJKM0aJVKRVqtll8DgOGnzdJ2BVnQZmZmZHl52a8BwPDTZmm7gixou7u7tnR6AJMagGGmjdJWabO0XUEWNKU7tHZ6kD6XsrCwsAzjoo3SVsUxU7mgAcAoI2gAEiHyP5WMU62EWKevAAAAAElFTkSuQmCC" InformativeScreenshot="60ffed8428c19721e7d0493975d4e405.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Login, Sign in | LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="531, 365, 86, 38" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' check:text='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAqCAYAAAAzikzDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJzSURBVGhD7ZnBbsIwDED3tVz4HlTtP+iZc/cPHPiBSZw4ZnHspLbjoE1QMwk/KRoNqWOe3YC0jxS4EKKdEKIvl0s6HA5pv9+n3W4X44mjiQbJIPh0OqXb7UazwbNooqGTQXKwDU00dHN08nY00XCOBNsRop0I0U6EaCdCtBMh2okQ7USIdiJEOxGinQjRToRoJ0K0EyHaiRDtRIh+Nuc5u5zS8k3XxAOir2n5tP4/NqczrXhLNhN9lFrPR5Ddb/Q2eInOO6U5x5q+rnT9ZviJpq425t+C14k2zvLPJc9Krl/TnTX4lPD3Zwj/vaSpvmbg8aW+K8paJaBI4XF7QSUvyIX2kmt0XnnPlx0deWN5jFBy7D6UzMXk2Mcq2jiKckyUa+WwFpYXoAmja+u7pBa7v29Kk24OEq/zQuGbi6Y5o2M55ofuCkZYncjoilTW50LkmKsEzKtd34lZcmG5Yfx+7Sjn0frHRZcKsjEQhh3ExyoHk1Pd0aiPpzoKKkpaiZVzKH+bMIxRO1W+p1CPPuam95bxBH5Hh6RK5OvM5Ntjl0cnQRZVfkDerfi6vM8LUGKv++muFVii9doS+z+JHiRkd0nlfgfXwvHub+LKfvW+Vbp+zE15ld+Iphz/uWi6byg6w7vRoDsfqWMXkMLmcd2ydnllIAPQ3W6LHn/2cr+76NqdbE3tSPkoS+m4huay9Fmc3RhTnucwB78MDKHwi8EoqiUE9zXmrO4vxVJ50NwLRGeoqzEBTEyIzOCH5oOJUffDkJIRjKGFUqEHx8Ra9Dr6ggxFA00sDXAxeFoeEB38hRDtRIh2IkQ7EaKdCNFOhGgXUvoBlkxyo2NvtCAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e788436b-55c1-465f-8ea7-a4c453a979fd" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/login" DesignTimeRectangle="531, 473, 304, 52" ElementType="Button" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Sign in' check:text='Sign in' /&gt;" Guid="d98ac3d2-7ed5-45d9-bdb8-3ba11d3fd0b8" ImageBase64="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" InformativeScreenshot="312ef0156298cc9e2f6c5bd32f471e75.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Login, Sign in | LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="0cbd4337f98d9d99f0d3c7c52243bbea.png" Selector="&lt;html app='chrome.exe' title='LinkedIn Login, Sign in | LinkedIn'/&gt;" Url="https://www.linkedin.com/login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
