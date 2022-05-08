@@ -1,0 +1,178 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Type_2" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="905,2066" sap2010:WorkflowViewState.IdRef="Type_2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="66">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>CredentialManagement</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="52">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="915,2001" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Sign in to Outlook" sap:VirtualizedContainerService.HintSize="873,1909" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="2bd905c7-04c1-4762-a4ba-f8aa86deacd0" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="839,1693" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="element_found" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:UiElementExists DisplayName="Element Exists 'DIV  lightbox'" Exists="[element_found]" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7380cfa4-b2a0-4ed4-9ba6-628d645de9a5" InformativeScreenshot="92d7025e2b83251614301bc2cc5b48e0" Selector="&lt;webctrl id='lightbox' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <If Condition="[element_found]" sap:VirtualizedContainerService.HintSize="797,1453" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Element Exist" sap:VirtualizedContainerService.HintSize="376,1294" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="ss:SecureString" Name="pass" />
+                    <Variable x:TypeArguments="x:String" Name="uname" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="334,79" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[pass]" PersistanceType="Enterprise" Target="Outlook" Username="[uname]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Logging into. . . . &quot;+uname]" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'to continue to Outlook'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2bd905c7-04c1-4762-a4ba-f8aa86deacd0" Text="[uname]" Version="V1">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&amp;redirect_uri=https%3a%2f%2foutlook.office365.com%2fowa%2f&amp;resource=00000002-0000-0ff1-ce00-000000000000&amp;response_mode=form_post&amp;response_type=code+id_token&amp;scope=openid&amp;msafed=0&amp;msaredir=0&amp;client-request-id=7e75d2f7-20b8-4d46-a318-596c8bf107b7&amp;protectedtoken=true&amp;claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&amp;nonce=637583451329542152.b6f2d56a-dc39-45f3-8277-d9f412b73a5d&amp;state=DYuxCoMwFABj-y_dUs1LXmIG6VBoHbSDFSxuiVFQKoqK0r9vhrvluIAQcvacPEHkRZTkCmMukHHQKIAhXK3swKE01DVcU4EdpzEoRZ3uBAOruEEX-LcKp8OEt3UzW5uwy9K6fmmbrZwSkxZRk-Yy--ndfYrVgl6yUY_1-B3qMofXGwcL0W6rx2zv2nc32x4n92RrdvwB" DesignTimeRectangle="517, 381, 348, 36" ElementType="InputBox" FriendlyName="'INPUT i0116'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' aaname='' /&gt;" Guid="2aaebd13-3e4e-46b3-8197-503c6bb4c835" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWAAAAAoCAYAAADAHSD5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALlSURBVHhe7do9bvJAFIXhrJbsgxVATcsSKFJTUVJRsQAWQEXj6CAOutyMP36+wI3M+0gjsGc8dybFsWXy0QEAShDAAFCEAAaAIgQwABQhgAGgCAEMAEUIYAAoQgADQBECGACKEMAAUIQABoAiBDAAFCGAAaAIAQwARS4CeLFYdKPR6KLN5/PucDicRvwu1ZtOp91+vz82fd9ut6feOlqD1wUAz/IjgFer1enotQhgAO+GAG4ggAG8ws0B7FBar9fn1xMar9cTek3hczlANcZ94/G42+12p57uWMuvOG4JYI/xfDkkPd9yuTz2t/biOTabzcW641jvVZ9ac6uW6Bpfn+foq5P3p+M4x7/2D2BY7gpgBYTGiILU4eTQ0LUxqPSpMDT1O3DzsQOrL4BcL/bnejrWevTZx3XizcDnfJ336rX5JuO9i77HveQ5WnXyelUnHmvcZDI5jwcwbFd/hIuhFMNCND6Gkvpms1lvgOi8+j2H5r41gHMtcTD6mhxwLa7jfVlci+aLwSlx/31BqTF5P7GOzvnvk9du2mNeG4BhuvsVRAy3PD4GjOm7n5TV4hwx9BxYOZDEYdVaW1xDnK9PX50Ynq29xnOtftFefYNp1Ynn/D3e7NzyjQbAMD01gNUXnyRjQEkMzBhOmQO41VcVwK06jwRw7AfwXp4WwK3QfDSARbXUolzjfwJY13r+1l7jOe3j1lcQsU4857X3/b0BDN9Tn4BjaDpw4hwxMFuBFWlOPU3H/nh967jFdeI6cqC29prPaV+xVl5/PpZ8Tp/5XbP+yyQeAxiuqz/COXRyAMm1AHbgaB4FjcLl0Sdg0bzxfXIO23sCWGvx2tRi3dZe+/bv6/Mcrf20zmnNcQ7fsAAM30UAv4NWCAJABQIYAIoQwABQ5O0CGAD+CgIYAIoQwABQhAAGgCIEMAAUIYABoAgBDABFCGAAKEIAA0CRcwB/fH7RaDQa7QXNeAIGgCIEMACU6Lpv57UScYM+JaYAAAAASUVORK5CYII=" InformativeScreenshot="9e16c5a577024b4e9eb930e09d02e30e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to Outlook' /&gt;" SearchSteps="FuzzySelector, Image">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="515, 349, 352, 20" ElementType="Text" FriendlyName="'to continue to Outlook'" FullSelectorArgument="&lt;webctrl aaname='to continue to Outlook' parentid='loginHeader' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='to continue to Outlook' parentid='loginHeader' tag='DIV' type='' check:text='to continue to Outlook' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWQAAAAYCAYAAADNjIcuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOISURBVHhe7Zq9TiMxFIX3PXgACp6DEomGhiY9L8ADgETJG4BoKJOWlpYKUSFET5cOUVB49Y1yohuv7Vl2E2Z2cz5pFPva98ce+WgyyY80AJ+fn+nq6irt7Ox01+3t7WLEGGO2l40K8vX1dbq5uUkvLy9pPp931/Pzczo7O0u7u7udGB8dHaW3t7eFhzHGbC8bFeTLy8vlU3DpOjw8TE9PT4vZxhiz3WxUkB8fH9PFxUU6ODhYivDe3l6aTCZpNpul9/f3xUxjjDGDvEM2xhjzKxZkY4wZCRZkY4wZCf+UIL++vqbj4+Puc5vhx9LpdLro/TnEIJYxZhysCPK6Dvq6QHhPTk66v8sNxTr2JP+3yVdE8OPjI52enqaHh4eFxYJszP+KBbmHv9kTiWkuevSxM96HBdmY7aETZB16PcHxWkAiyIEt2UsgGqW5HHzZ9/f3l68cGEdw7+7uOjvjEogYi4sYUaBbvkA7ihjtOE4s+ZXW1dqT2npyaoKXi2ytVvKRV7kk4owRW9DXnHwteYxYT6xP+xHjGmO+l+YTMm2JACAUsR9hLIrB/f19187tuagyppjqS5zi3Lzf58ta1AbaEh/mEkdCylhtXfmeMLe2ngixiBlriEQxbNVaihNrat0j+cb6c1/6+d4ZY4ahKsi5aAEH/Pz8fMUm8M0PdElMQHNLOWINudjFfp9vXg9tbCAhEsSiTuWJxJh964m09gpiPbl/HCvlVE2lPYh58cEXm8DOODZi0GaO1miMGY6mIJdEKhcPqIlPzU6OmqBoDLB/RZCjb0vkmKOv8Lpqrx7invStJ8LckniL6NOqtRRHNbEHrXsU44joQwzWTp88xphhWcsTck18anYJRilHFCrsmxJkzesj7knfenLwU85IHqdVaymnauq7R/jgi01gZxyb6tNljBmW5jtk+vFAlw64wC++W9U75Nz+FVGNc/N+ny+fEhnmUoP6+NCPvjXyPaFdW09OnhfYO/Yw2lq1an5JkNWu3SPFivVHX+Ut1WSM+X5WBBlx4at7FBwOqb7Wx4NfggNemhvtMTafLVEF5ccWxa/Pl3FyKSf/xoiCg3CpJq6aGJX2hBzyi/YSEruYK64PfrdW7SljMYb2KM4RMTZX9KOtPJrXd4+NMZtjRZCNMcYMhwXZGGNGggXZGGNGggXZGGNGggXZGGNGggXZGGNGggXZGGNGQUo/ATmrISpVfFl9AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd905c7-04c1-4762-a4ba-f8aa86deacd0" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&amp;redirect_uri=https%3a%2f%2foutlook.office365.com%2fowa%2f&amp;resource=00000002-0000-0ff1-ce00-000000000000&amp;response_mode=form_post&amp;response_type=code+id_token&amp;scope=openid&amp;msafed=0&amp;msaredir=0&amp;client-request-id=7e75d2f7-20b8-4d46-a318-596c8bf107b7&amp;protectedtoken=true&amp;claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&amp;nonce=637583451329542152.b6f2d56a-dc39-45f3-8277-d9f412b73a5d&amp;state=DYuxCoMwFABj-y_dUs1LXmIG6VBoHbSDFSxuiVFQKoqK0r9vhrvluIAQcvacPEHkRZTkCmMukHHQKIAhXK3swKE01DVcU4EdpzEoRZ3uBAOruEEX-LcKp8OEt3UzW5uwy9K6fmmbrZwSkxZRk-Yy--ndfYrVgl6yUY_1-B3qMofXGwcL0W6rx2zv2nc32x4n92RrdvwB" DesignTimeRectangle="759, 495, 108, 32" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Next' check:text='Next' /&gt;" Guid="38a9093f-2f5b-4325-9b78-2caf2d30be39" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAkCAYAAABR/76qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGuSURBVHhe7ZU9SgNBAIVzNu9hbe0VPIAnEA9gZWFhYZlKEEGQNLEQRZAIQQOGEGTkBb9l3GywMbJP3gePmZ2fXZhvZ2ZQgjURaE4jcLB3nhgFItA0EIGmgQg0DUSgaSACTQMRaBqIQNNABJoGItA0EIGmAQuBB2fjslh+lNun2VrfzuFleZzOy9HwYa3vPwesBIq2qN8U6PQzgI3AyWxRru5fy9t8WXaPb5q+CPyia1BfgsD9k9FqgeujtGvRaQPV1Sbx+gEuRi/NWNXVdnr93Oxyobq+y7i+BawESoDqWnAWty2Q51qShCNd49jFit676V19DtgJ1LPksKvai66Svk3zJVPvUH7azX0NWApUyVHYXnS1dVEfiSr1zE7kOxG4pbQFKlpkCeBerAW2d2A7/AAR+EfpEqjo+LubvH9bdMS2x9bhCKWkPQK3lE0COQoFi46E+m7TvOF4uqrXgjVfdZX13FpqXwPWAhXuvHrXaJzEAPcfwuuxml/vWPXVcxjXt4CFwGQ9EIGmgQg0DUSgaSACTQMRaBqIQNNABJoGItA0EIGmgUZg8CQCrSnlE6u8izODe8SYAAAAAElFTkSuQmCC" InformativeScreenshot="8887c6bddd7980b4d1885e913df0ceb6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to Outlook' /&gt;" SearchSteps="FuzzySelector, Image" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,241" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="2bd905c7-04c1-4762-a4ba-f8aa86deacd0" SecureText="[pass]" Version="V1">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&amp;redirect_uri=https%3a%2f%2foutlook.office365.com%2fowa%2f&amp;resource=00000002-0000-0ff1-ce00-000000000000&amp;response_mode=form_post&amp;response_type=code+id_token&amp;scope=openid&amp;msafed=0&amp;msaredir=0&amp;client-request-id=7e75d2f7-20b8-4d46-a318-596c8bf107b7&amp;protectedtoken=true&amp;claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&amp;nonce=637583451329542152.b6f2d56a-dc39-45f3-8277-d9f412b73a5d&amp;state=DYuxCoMwFABj-y_dUs1LXmIG6VBoHbSDFSxuiVFQKoqK0r9vhrvluIAQcvacPEHkRZTkCmMukHHQKIAhXK3swKE01DVcU4EdpzEoRZ3uBAOruEEX-LcKp8OEt3UzW5uwy9K6fmmbrZwSkxZRk-Yy--ndfYrVgl6yUY_1-B3qMofXGwcL0W6rx2zv2nc32x4n92RrdvwB" DesignTimeRectangle="517, 334, 348, 36" ElementType="InputBoxPassword" FriendlyName="'INPUT i0118'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='' /&gt;" Guid="125373f6-b979-4362-a484-89a265208458" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWAAAAAoCAYAAADAHSD5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKZSURBVHhe7do7jupAFEXRngfzo+fBCCAmJSQkaImMiJABEBExACKSah3EsS5FGRz5IrSXVPKHKmOS3X7W+ykAgBQEGACSEGAASEKAASAJAQaAJAQYAJIQYABIQoABIAkBBoAkXYAnk8l9DwAwBgIMAEkIMAAkIcAAkIQAA0CShwBvNpsynU4fxvF4vM/4Hvqd+/3+fgQAOZ4CHMN0Pp/LbDb7uggTYACf4GWARcc6/00IMIBPMCjAq9WqXK/X7onYrydimPW55vkzrxE9Qfu8ho414hyvj9es5+he4nXivV4ul7JYLMrhcLhtNXROdE2v0X7rdwLA2N4G2MESxU0RFgfPryfiPNFchVPz5/N5t07b0+l0W79cLp+uVwfX19Q2fub5vl8fx/BKvc5/DAgwgGwvA6xY6YnXkazF+fVa01qFNkZRFESF0Wv8tOso+3Od13GMuHmN5tZBlr51ffcKAGN6CrD/qa5RP01KPScGtLXGIY1zTce6nmira3ira2idtjpu3YvC6rhraI7mWt86fQcBBpDt7SsIc+AcTGnN17FiG+eJ18cnagdUW8fWUVY8/XQb96MhAW6te/U7AWAsgwPcilnffMXQYa05sOJ5el+83W5v57RmvV6X3W7XXVvnhr6CiAFurdNcrSHAALINDnAdM4XOrxUUNQXTcY5zNS9GUd/hAIv24+sJB7J+96x58Q9AHdxWgH2t+H36ntbrEAAY2+AAi+PlVwxxvvb9Wf2aoe+/romC+S62Fr9DI8a2FWBxhL1G9xvvGwCyPAQYADAeAgwASQgwACQhwACQpAswAGBcBBgAkhBgAEhCgAEgCQEGgCQEGACSEGAASEKAASBJF+Cf3z8Gg8FgjDCMJ2AASEKAASBFKf84X2WlLXCjwQAAAABJRU5ErkJggg==" InformativeScreenshot="23ad374a06d545bfddb39533f33187c1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to Outlook' /&gt;" SearchSteps="FuzzySelector, Image">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="515, 294, 352, 28" ElementType="Text" FriendlyName="'Enter password'" FullSelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' aaname='Enter password' check:text='Enter password' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd905c7-04c1-4762-a4ba-f8aa86deacd0" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&amp;redirect_uri=https%3a%2f%2foutlook.office365.com%2fowa%2f&amp;resource=00000002-0000-0ff1-ce00-000000000000&amp;response_mode=form_post&amp;response_type=code+id_token&amp;scope=openid&amp;msafed=0&amp;msaredir=0&amp;client-request-id=7e75d2f7-20b8-4d46-a318-596c8bf107b7&amp;protectedtoken=true&amp;claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&amp;nonce=637583451329542152.b6f2d56a-dc39-45f3-8277-d9f412b73a5d&amp;state=DYuxCoMwFABj-y_dUs1LXmIG6VBoHbSDFSxuiVFQKoqK0r9vhrvluIAQcvacPEHkRZTkCmMukHHQKIAhXK3swKE01DVcU4EdpzEoRZ3uBAOruEEX-LcKp8OEt3UzW5uwy9K6fmmbrZwSkxZRk-Yy--ndfYrVgl6yUY_1-B3qMofXGwcL0W6rx2zv2nc32x4n92RrdvwB" DesignTimeRectangle="759, 422, 108, 32" ElementType="Button" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Sign in' check:text='Sign in' /&gt;" Guid="91a7e12d-5d1b-44a0-b187-39a6a54289ab" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAkCAYAAABR/76qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG8SURBVHhe7ZYxTsNAFERzNu5BzT04ACdAtFyAgoKSCpQGCdHQIFAakBCkiKIILRrDWD+bHyqId8yM9IS9u15b//k7TIojHQsUTy9wcnBuhGAsUBTGAkVhLFAUxgJFYSxQFMYCRWEsUBTGAkVhLFAUxgJFYZoSeHh2X5arj+8nKt0xxjB3cfeydv4X7OIevwXTjMDjy8eN4mEMxHXmC6YZgbezeUc2ZzZhmhGIz9fT66LsHV2l8+jE98Wq7J/c9GMQzvAFwD6YwzqsP72edfsyP3V0vAeeA9dhv3gf7j80TDMCWfBaEqkFoqhROOaRWmD9O7ptf5AJRCgdf1v5jWSa+icG8G2vuzEWFwXEcV3IrANjx2Dseb7cKiATiD05zzEKHRKmOYGAhYpveyxuPI7XZQJjsbOxSNyXzxBfgGxsKJgmBRIIYQfUAlFIFLReb4ENgUJlArNPaF1cC9wx04e3NSF1sbPiUi5AURELHAgKiImFjsXFOYvJ4Hp/QoVhcbfJGRvMaASiK2KHjh1GUmD9+URwjvFs/RhhRtOB/w3GAkVhLFAUxgJFYSxQFMYCRWEsUBSmF+hoxgKlU8ongbzXSRb+huIAAAAASUVORK5CYII=" InformativeScreenshot="569cc1bc1c8654eba95fbd0e651aab53.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in to Outlook' /&gt;" SearchSteps="FuzzySelector, Image" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Element not exist" sap:VirtualizedContainerService.HintSize="376,185" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Login successful.&quot;]" />
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e1d87569b19cf83ebfc7b60fb8ca6332.png" Selector="&lt;html app='chrome.exe' title='Sign in to Outlook'/&gt;" Url="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&amp;redirect_uri=https%3a%2f%2foutlook.office365.com%2fowa%2f&amp;resource=00000002-0000-0ff1-ce00-000000000000&amp;response_mode=form_post&amp;response_type=code+id_token&amp;scope=openid&amp;msafed=0&amp;msaredir=0&amp;client-request-id=7e75d2f7-20b8-4d46-a318-596c8bf107b7&amp;protectedtoken=true&amp;claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&amp;nonce=637583451329542152.b6f2d56a-dc39-45f3-8277-d9f412b73a5d&amp;state=DYuxCoMwFABj-y_dUs1LXmIG6VBoHbSDFSxuiVFQKoqK0r9vhrvluIAQcvacPEHkRZTkCmMukHHQKIAhXK3swKE01DVcU4EdpzEoRZ3uBAOruEEX-LcKp8OEt3UzW5uwy9K6fmmbrZwSkxZRk-Yy--ndfYrVgl6yUY_1-B3qMofXGwcL0W6rx2zv2nc32x4n92RrdvwB" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
